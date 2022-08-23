@@ -1,0 +1,217 @@
+/* 공통소스 */
+body{
+    min-width: 1240px;
+    font-family: 'yoongothic740','yoongothic760','proximanova','fontawesome', sans-serif;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: (0 0 0 0);
+    margin: -1px;
+}
+/* group-title */
+.group-title {
+    margin-bottom: 40px;
+    color: #333;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'ProximaNova thin';
+}
+/* 버튼 */
+
+/* 제품 영역 */
+.prd-link{display: block;height: 100%;}
+.prd-link .img-area{
+    position: relative;
+}
+.prd-link .img-area img{width: 100%;}
+.img-area .badge::before{
+    content: '';
+    display: block;
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url(../images/img/sp-img.png)-330px 0 no-repeat;
+    z-index: 1;
+}
+.prd-link .info-area{
+    padding: 15px 10px 1px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.info-area .text-box{}
+.info-area .text-box .company{
+    display: block;
+    color: #000;
+    font-size: 16px;
+    font-family: "ProximaNova bold";
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 16px;
+    margin-bottom: 12px;
+    padding-top: 3px;
+}
+.info-area .text-box .info{
+    display: block;
+    color: #555;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info-area .text-box .name{
+    height: 30px;
+    max-height: 30px;
+    margin-top: 3px;
+    margin-bottom: 0;
+    color: #555;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.info-area .price-box{
+    display: flex;
+    position: relative;
+    font-family: "proximanova regular";
+    margin-top: 22px;
+    margin-bottom: 14px;
+    align-items: baseline;
+}
+.info-area .price-box .pri-cur{
+    margin-right: 10px;
+    color: #333;
+    font-size: 18px;
+}
+.info-area .price-box .pri-ori{
+    color: #808080;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.info-area .price-box .pri-dis{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    color: #ff4000;
+}
+.info-area .label-box{
+    display: block;
+}
+.info-area .label-box .label{
+    margin-top: 10px;
+}
+.info-area .label-box .label-resv{
+    background: #000;
+    color: #fff;
+    text-indent: initial;
+    width: auto;
+    font-size: 11px;
+    line-height: 14px;
+    padding: 2px 5px;
+}
+.info-area .label-box .label-only{
+    background: #fff;
+    color: #888;
+    width: auto;
+    padding: 2px 5px;
+    position: relative;
+    text-indent: initial;
+    font-size: 11px;
+    line-height: 14px;
+    margin-right: 3px;
+}
+.info-area .label-box .label-only::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #959595;
+}
+/* prdlist */
+
+
+
+/* sp-img */
+.sc-info .cs-board .icon-area .icon-item .icon.icon-fb::after,
+.sc-info .cs-board .icon-area .icon-item .icon.icon-inst::after,
+.sc-info .cs-board .icon-area .icon-item .icon.icon-pint::after,
+.sc-info .cs-board .icon-area .icon-item .icon.icon-ytb::after{
+    background: url(../images/img/sp-img2.png) 0 0 no-repeat;
+    background-size: 800%;
+}
+
+.sc-designer .swiper .btn-nav{
+    background: url(../images/img/sp-img.png) 0 0 no-repeat;
+    background-size: 600px 600px;
+}
+
+/*플러스 */
+.group-title .link-more{
+    display: inline-block;
+    position: relative;
+    width: 33px;
+    height: 33px;
+    margin-left: 20px;
+    margin-top: -5px;
+    text-indent: -9999999px;
+    font-size: 0;
+}
+.group-title .link-more::before{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1px;
+    height: 35px;
+    background-color: #000;
+}
+.group-title .link-more::after{
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 35px;
+    height: 1px;
+    background-color: #000;
+}
+
+/* 큰틀 잡는용 */
+.common-inner{
+    max-width: 1880px;
+    margin: 0 auto;
+}
+/* 1920이 pc최대화면인데 노트북이나 
+작은 모니터 같은경우에 1920이 안될 수도 있다. 
+그래서 최대값을 1560정도로 잡아준것
+*/
+@media screen and (max-width: 1919px) {
+	.common-inner {
+        width: 1560px;
+		
+	}
+}
+@media screen and (max-width: 1599px) {
+	.common-inner {
+		width: 1240px;
+	}
+}
+@media screen and (max-width: 768px) {
+	
+}

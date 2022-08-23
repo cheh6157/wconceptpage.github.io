@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'yoongothic740';
+    src: url(../font/YoonGothicPro740.woff)format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'yoongothic760';
+    src: url(../font/YoonGothicPro760.woff)format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'proximanova thin';
+    src: url(../font/proximanova-thin-webfont.woff2)format('woff2');
+    font-weight: thin;
+}
+@font-face {
+    font-family: 'proximanova light';
+    src: url(../font/proximanova-light-webfont.woff2)format('woff2');
+    font-weight: light;
+}
+@font-face {
+    font-family: 'proximanova regular';
+    src: url(../font/proximanova-regular-webfont.woff2)format('woff2');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'proximanova medium';
+    src: url(../font/proximanova-medium-webfont.woff2)format('woff2');
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'proximanova semibold';
+    src: url(../font/proximanova-semibold-webfont.woff2)format('woff2');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'proximanova bold';
+    src: url(../font/proximanova-bold-webfont.woff2)format('woff2');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'proximanova extrabold';
+    src: url(../font/proximanova-extrabold-webfont.woff2)format('woff2');
+    font-weight: bolder;
+}
+@font-face {
+    font-family: 'fontawesome';
+    src: url(../font/fontawesome-webfont.woff2)format('woff2');
+    font-weight: normal;
+}

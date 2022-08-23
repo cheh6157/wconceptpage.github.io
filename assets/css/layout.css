@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+
+/* header */
+.header{}
+.top-banner{}
+.top-banner a{
+    display: block;
+    height: 100%;
+}
+.top-banner img{
+    width: 100%;
+}
+.header .h-inner{
+    width: 100%;
+    position: relative;
+    height: 65px;
+}
+.h-inner .logo-area{
+    position: absolute;
+    left: 40px;
+    top: 0;
+}
+.h-inner .logo-area .logo{
+    width: 172px;
+    height: 65px;
+    background: url(../images/logo/b-logo.png)no-repeat;
+    background-size: contain;
+}
+.logo-area .logo a{
+    display: block;
+    height: 100%;
+}
+.h-inner .search-area{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 420px;
+    border-bottom: 2px solid #000;
+}
+.search-area form{}
+.search-area fieldset{}
+.search-area input{
+    width: 90%;
+    outline: none;
+    border: 0;
+    height: 28px;
+    display: block;
+    float: left;
+    line-height: 33px;
+    text-indent: 5px;
+    font-family: "yoongothic740";
+    font-size: 12px;
+    background: none;
+    padding: 0;
+}
+.search-area .btn-search{
+    border: 0;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    background: url(../images/icon/b-search.png)no-repeat;
+}
+.h-inner .join-area{
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+}
+.join-area .join-list{
+    display: flex;
+}
+.join-area .join-item{
+    padding: 0 20px;
+    font-family: "yoongothic740";
+}
+.join-area .join-item .join{
+    display: block;
+    text-align: center;
+}
+.join-area .join-item .join::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 32px;
+    margin-left: 2px;
+    background: url(../images/icon/b-join.png)no-repeat;
+}
+.join-area .join-item .login{
+    display: block;
+    text-align: center;
+}
+.join-area .join-item .login::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 32px;
+    margin-left: 2px;
+    background: url(../images/icon/b-login.png)no-repeat;
+}
+.join-area .join-item .bag{
+    display: block;
+    text-align: center;
+}
+.join-area .join-item .bag::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 32px;
+    background: url(../images/icon/b-mybag.png)no-repeat; 
+}
+.gnb-area{
+    position: relative;
+    display: block;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+.gnb-area .nav-box{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.gnb-area .gnb-item{
+    float: left;
+    
+}
+.gnb-area .gnb-item a{
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'proximanova bold';
+    font-size: 14px;
+    padding: 29px 18px;
+    line-height: 12px;
+}
+.gnb-area .gnb-item a:hover{
+    color: #04bd9e;
+}
+.gnb-area .bar{
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    margin: 29px 30px 29px 20px;
+}
+.gnb-area .join-area{
+    display: none;
+}
+.gnb-area.fixed{
+    position: fixed;
+    top: 0;
+    display: block;
+    background: #000;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    z-index: 10;
+    min-width: 1280px;
+}
+.gnb-area.fixed .logo-area{
+    position: absolute;
+    left: 40px;
+    top: 0;
+    z-index: 10;
+}
+.gnb-area.fixed .logo-area .logo{
+    width: 172px;
+    height: 65px;
+    background: url(../images/logo/w-logo.png)no-repeat;
+    background-size: contain;
+}
+.gnb-area.fixed .nav-box{
+    min-width: 1600px;
+}
+.gnb-area.fixed .join-area{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+}
+.gnb-area.fixed .join-area .join-list{
+    display: flex;
+}
+.gnb-area.fixed .join-area .join-item{
+    padding: 0 20px;
+    font-family: "yoongothic740";
+}
+
+.gnb-area.fixed .join-area .join-item .join{
+    display: block;
+    text-align: center;
+}
+.gnb-area.fixed .join-area .join-item .join::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+    margin-bottom: 7px;
+    margin-top: 3px;
+    background: url(../images/icon/w-search.png)no-repeat;
+}
+.gnb-area.fixed .join-area .join-item .login{
+    display: block;
+    text-align: center;
+}
+.gnb-area.fixed .join-area .join-item .login::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 32px;
+    margin-left: 2px;
+    background: url(../images/icon/w-mypage.png)no-repeat;
+}
+.gnb-area.fixed .join-area .join-item .bag{
+    display: block;
+    text-align: center;
+}
+.gnb-area.fixed .join-area .join-item .bag::before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 32px;
+    background: url(../images/icon/w-mybag.png)no-repeat; 
+}
+/* footer */
+.footer{margin-top: 70px;}
+.footer .nav-area{
+    position: relative;
+    background: #848484;
+    margin: 0 auto;
+}
+.footer .nav-area .f-list{
+    width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 28px;
+}
+.footer .nav-area .f-item{
+    padding: 0 44px;
+}
+.footer .nav-area .f-item a{
+    color: #fff;
+    font-size: 14px;
+    line-height: 57px;
+}
+.footer .policy-area{
+    display: flex;
+    width: 1240px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 36px;
+    color: #666;
+}
+.footer .policy-area .column-left{
+    line-height: 20px;
+    font-size: 12px;
+}
+.footer .policy-area .column-left .link{
+    display: inline-block;
+    min-width: 60px;
+    padding: 0 8px;
+    height: 20px;
+    line-height: 18px;
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    color: #000;
+    border: 1px solid #333;
+    background-color: #fff;
+    text-align: center;
+}
+.footer .policy-area .column-right{
+    width: 30%;
+    font-size: 12px;
+    line-height: 20px;
+    position: relative;
+}
+.footer .policy-area .column-right::before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    margin: auto;
+    width: 1px;
+    height: 130px;
+    background: #e5e5e5;
+}
+.footer .policy-area .column-right .title{
+    display: block;
+    font-weight: bold;
+}
+.footer .policy-area .column-right .reward{
+    display: block;
+}
+.footer .policy-area .column-right .link{
+    display: inline-block;
+    min-width: 60px;
+    padding: 0 8px;
+    height: 20px;
+    line-height: 18px;
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    color: #000;
+    border: 1px solid #333;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
